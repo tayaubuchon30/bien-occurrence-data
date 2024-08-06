@@ -47,5 +47,9 @@ TN_country_vector <- c('United States', 'United States','United States','United 
                        'United States','United States','United States')
 TN_species_by_county <- BIEN_occurrence_county(country = TN_country_vector, state = TN_state_vector, county = TN_county_vector, 
                        observation.type = TRUE, political.boundaries = TRUE, collection.info = TRUE)
+write.csv(TN_species_by_county, file = "bienTN_speciesByCounty.csv")
+head(TN_species_by_county)
 
+# read the species list downloaded from the ArcGIS map of Targeted species
 
+arcgisTNspeciesList <- read.csv("arcgis_tennessee_exportCSV.csv")
