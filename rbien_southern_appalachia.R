@@ -53,3 +53,4 @@ head(TN_species_by_county)
 # read the species list downloaded from the ArcGIS map of Targeted species
 
 arcgisTNspeciesList <- read.csv("arcgis_tennessee_exportCSV.csv")
+bienTN_speciesByCounty <- read.csv("bienTN_speciesByCounty.csv")
